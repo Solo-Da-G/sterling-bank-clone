@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="..bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../newproject/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="css/facebstyle.css" />
+
+  <style>
+    .picture-story {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px 0px #e6e4e4;
+
+
+    }
+
+    .picture-story ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 5px;
+      width: 100%;
+      list-style: none;
+      overflow: hidden;
+      padding: 10px 0;
+    }
+
+    .picture-story ul li {
+      /* width: 180px; */
+      height: 195px;
+    }
+
+    .picture-story ul li img {
+      width: 90%;
+      height: 90%;
+      border-radius: 20px;
+    }
+
+    .yourthought {
+      background: #fff;
+      border-radius: 5px;
+      margin-top: 20px;
+      height: 145px;
+    }
+
+    .col-md-4 {
+      display: inline-flexbox;
+      justify-content: space-between;
+      position: fixed;
+      z-index: 500;
+      right: 0;
+     
+    }
+
+
+    .col-md-4 a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .col-md-4 a:hover {
+      background: rgb(210, 210, 210);
+      /* padding: 8px 140px 8px 8px; */
+      /* width: 100%; */
+      border-radius: 5px;
+    }
+
+    .side_nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid mb-4">
+    <header shadow-lg>
+      <div class="logo">
+        <a href=""><i class="fab fa-facebook fa-3x" style="color: #497ad0"></i></a>
+      </div>
+
+      <div class="top-menu">
+        <ul>
+          <li>
+            <form action="">
+              <input type="search" name="" id="" placeholder="Search Facebook" />
+              <button><i class="fa fa-search"></i></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="middle-menu">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-user-group"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-play-circle" style="color: #27282b"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-store" style="color: #27282b"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-regular fa-gamepad"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="profile-menu">
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-bars" style="color: #27282b"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-messenger fa" style="color: #27282b"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href=""><i class="fa-solid fa-bell" style="color: #111212"></i></a>
+          </li>
+          <li>
+            <div class="logo2">
+              <a href=""><img src="../newproject/img/solofb.jpg" alt="" width="30px" /></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 navigator side_nav left-scroll">
+          <ul>
+            <li>
+              <a href=""><img src="../newproject/img/solofb.jpg" alt="" width="30px" />
+                Donatus A Solomon</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-user-friends" style="color: #5b8dc2"></i>Friends</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-business-time" style="color: #5b8dc2"></i>Most Recent</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-users" style="color: #5993c9"></i>Groups</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-store" style="color: #0a8ff5df"></i>MarketPlace</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-play-circle" style="color: #0a8ff5df"></i>Watch</a>
+            </li>
+            <li>
+              <a href=""><i class="far fa-clock" style="color: #5e0ae4"></i>Memories</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-bookmark" style="color: #c02a8ef6"></i>Saved</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-flag" style="color: #f5740aee"></i>Pages</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-calendar-plus" style="
+                      --fa-primary-color: #ebe3e3;
+                      --fa-secondary-color: #5993c9;
+                    "></i>Events</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-5">
+          <!-- <div class="head-picstory">
+
+            <div class="head-picstory1">
+              <ul>
+                <li>
+                  <a href=""><i class="fas fa-book-open fa-2x" style="color: #2c5bc9"></i>Stories</a>
+                </li>
+                <hr>
+            </div>
+            <div class="head-picstory2">
+              <ul>
+                <li>
+                  <a href=""><i class="fas fa-play-circle fa-2x" style="color: #3a3e45"></i>Reels</a>
+                </li>
+              </ul>
+            </div>
+            </ul>
+          
+          </div> -->
+
+          <div class="picture-story">
+            <div class="toppics">
+              <ul>
+                <div class="book-open">
+                  <li><a href=""><i class="fas fa-book-open fa-2x" style="color: #2c5bc9">
+                      </i>
+                      <h6>Stories</h6>
+                    </a></li>
+                  <hr>
+                </div>
+              </ul>
+
+
+
+
+              <ul>
+                <li><a href=""><i class="fas fa-play-circle fa-2x" style="color: #3a3e45"></i>Reels</a></li>
+              </ul>
+
+            </div>
+            <ul>
+              <li>
+                <img src="../newproject/img/beautity3.avif" alt="" />
+              </li>
+              <li>
+                <img src="../assets/images/pic2.jpg" alt="" />
+              </li>
+              <li>
+                <img src="../newproject/img/beautity2.avif" alt="" />
+              </li>
+              <li>
+                <img src="../newproject/img/beauty1.avif" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="yourthought">
+            <div class="pack">
+              <div class="logo3">
+                <img src="../newproject/img/solofb.jpg" alt="" width="40px" />
+              </div>
+              <ul>
+                <li>
+                  <form action="">
+                    <input type="text" id="" placeholder="What's On Your Mind, Donatus?" />
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <div class="pack2">
+              <ul>
+                <li>
+                  <a href=""><i class="fa fa-video" style="color: #f50a0a"></i><strong> live
+                      video</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-images" style="color: #1bf403"></i>
+                    <strong> Photo/Video</strong></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-laugh" style="color: #f5ab0a"></i> <strong>
+                      feeling/Activity</strong></a>
+                </li>
+              </ul>
+            </div>
+            <div class="section3">
+              <div class="pichead1">
+                <div class="logo">
+                  <img src="../newproject/img/beautity 5.avif" alt="" width="40px" height="40px">
+
+                  <ul>
+                    <li><a href="">
+                        <h6>Amarachukwu Igwe Michael</h6>
+                      </a></li>
+                  </ul>
+                  <div class="icon-merge">
+                    <ul>
+                      <li><a href=""><i class="fa fa-ellipsis-h" style="color: #5c5c5c;"></i></a></li>
+                      <li><a href=""><i class="fa fa-times" style="color: #616161;"></i></a></li>
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="pichead2">
+                  <h6>Chelsea FC the Pride and Champion of English Premier League. Our Lads are ready to take on any
+                    team.</h6>
+                  <a href=""><img src="../newproject/img/chelseapp.jpg" alt="" width="95%" height="200%"></a>
+                  <div class="group">
+                    <ul>
+                      <li><a href=""><i class="far fa-thumbs-up fa-lg" style="color: #7b7979;"></i>Like</a></li>
+                      <li><a href=""><i class="far fa-comment-alt fa-lg" style="color: #7b7979;"></i>Comment</a></li>
+                      <li><a href=""><i class="fas fa-share fa-lg" style="color: #7b7979;"></i>Share</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="inside-pic">
+              <img src="../newproject/img/solofb.jpg" alt="" width="40px" height="40px">
+              <form action="" method="get">
+                <ul>
+                  <li>
+                    <input type="search" name="search" placeholder="Write a Comment here...">
+                    <button class="btn1"><i class="fa fa-bolt" style="color: #a1a3a5;"></i></button>
+                    <button class="btn1"><i class="fa fa-smile" style="color: #8a8a8a;"></i></i></button>
+                    <button class="btn1"><i class="fa fa-camera-alt" style="color: #777879;"></i></button>
+                    <button class="btn1"><i class="fab fa-pied-piper-square" style="color: #b5b5b5;"></i></i></button>
+
+
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="col-md-4 scroll">
+          <div class="cont-merge">
+
+            <ul>
+              <li><a href="">
+                  <h6>Contact</h6>
+                </a></li>
+              <li><a href=""><i class="fas fa-video" style="color: #b0b2b5;"></i></a></li>
+              <li><a href=""><i class="fa fa-search" style="color: #c0c1c4;"></i></a></li>
+              <li><a href=""><i class="fa fa-ellipsis-h" style="color: #b1b2b4;"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="friends">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/pic3.jpg" alt="" width="30px" height="30px" />
+                  <span class="friend-name">Mathew Osas</span>
+                </a>
+              </li>
+            </ul>
+
+
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/pigsaving.jpg" alt="" width="30px" height="30px" />
+                  <span class="friend-name"> Olatunji Kemi</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/project1.png" alt="" width="30px" height="30px" />
+                  <span class="friend-name"> Emeka John</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/project2.png" alt="" width="30px" height="30px" />
+                  <span class="friend-name"> Anita Bello</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/project3.png" alt="" width="30px" height="30px" />
+                  <span>Joseph Benjamin</span>
+
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li><a href="">
+                  <img src="../assets/images/project4.png" alt="" width="30px" height="30px" />
+                  <span class=""> Collins Ade</span>
+
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/project5.png" alt="" width="30px" height="30px" />
+                  <span class="">Peace Solomon</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/pic1.jpg" alt="" width="30px" height="30px" />
+                  <span class=""> Gabriel Ade Paul</span>
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/pic2.jpg" alt="" width="30px" height="30px" />
+                  <span class="">Osayomore O Kelly</span>
+
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/pic3.jpg" alt="" width="30px" height="30px" /><span class="">Adebola
+                    Michael</span>
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/logo1.jpg" alt="" width="30px" height="30px" />
+                  <span class=""> Ifeanyi Odeze</span>
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/logohouse.png" alt="" width="30px" height="30px" />
+                  <span class="">Ify Ifunada</span>
+                </a>
+              </li>
+            </ul>
+
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/logopound.jpg" alt="" width="30px" height="30px" />
+                  <span class=""> Akpam Nathaniel Jones</span>
+
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../newproject/img/solofb.jpg" alt="" width="30px" height="30px" />
+                  <span class=""> Oke Ifeoluwa</span>
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/pic3.jpg" alt="" width="30px" height="30px" />
+                  <span class=""> Obong Kate</span>
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/pigsaving.jpg" alt="" width="30px" height="30px" />
+                  <span class=""> Hamzart Bayo</span>
+                </a>
+              </li>
+            </ul>
+
+
+            <ul>
+              <li>
+                <a href="">
+                  <img src="../assets/images/project3.png" alt="" width="30px" height="30px" />
+                  <span class=""> Clement Onaiwu</span>
+                </a>
+              </li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bat">
+    <h6>Thanks be to God</h6>
+    <hr>
+  </div>
+</body>
+
+</html>

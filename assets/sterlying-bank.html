@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+
+    <!-- Downloaded bootstrap Library -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="../assets/css/sterling-bank.css">
+
+    <!-- javascript library -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+    <title>MyPersonal-Sterling Bank</title>
+    
+
+    <style>
+       
+
+        
+        /* These css background images sometimes work better
+       when its style in the html. */
+
+
+        .image-background {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url(../assets/images/sterling-background.jpg);
+            background-position: center;
+            background-size: cover;
+            width: auto;
+            height: 400px
+        }
+
+
+
+
+        .image-image {
+            background-image: url(./bootstrap/images/12.png);
+            background-position: center;
+            background-size: cover;
+            width: 543px;
+            height: 225px;
+            border-radius: 12px 12px 0px 0px;
+        }
+
+        .image-image1 {
+            background-image: url(../assets/images/kiki-banner.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 542px;
+            height: 215px;
+            border-radius: 12px 12px 0px 0px;
+        }
+
+        .fairpay {
+            background: url("../assets/images/farepay-new.webp");
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .switch {
+            background: url("../assets/images/Switch-sterling-scaled.jpg");
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+
+
+
+        }
+
+        .diaspora {
+            background: url("./images/diaspora_img-01.jpg");
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .onewoman {
+            background: url("bootstrap/images/sterling-one-woman-card-BG-img.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+        }
+
+
+        .shutterstock {
+            background-image: url(../assets/images/shutterstock.jpg);
+            /* background-position: center; */
+            height: 345px;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 8px;
+
+        }
+
+
+
+
+        .collection {
+            background-image: url(../assets/images/COLLECTION-OF-DREAMS-4.png);
+            background-position: center;
+            background-size: cover;
+            height: 245px;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 8px;
+            margin-top: -4px;
+            border: none;
+        }
+
+
+        .strategies {
+            background-image: url(../assets/images/debt-management.png);
+            background-position: center;
+            background-size: cover;
+            height: 245px;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 8px;
+            margin-top: -4px;
+            border: none;
+        }
+
+        .business-hub {
+            background-image: url(./images/sterling-hub-B-1-1-1.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 153px;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 8px 8px 0px 0px;
+            margin-top: -4px;
+            border: none;
+
+        }
+
+        .basic-loan {
+            background-image: url(../assets/images/loan.png);
+            background-position: center;
+            background-size: cover;
+            height: 245px;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 8px;
+            margin-top: -4px;
+            border: none;
+        }
+
+
+
+        /* dropdown menus and effect start here */
+
+
+        .drpdwn3-image1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(images/drpdwn3-directors-Phone-1.png);
+            background-position: right;
+            background-size: cover;
+            width: 270px;
+            height: 300px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .drpdwn3-image2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url(images/drpdwn3-award.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 270px;
+            height: 300px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        .drpdwn4-image1 {
+    background-image: url(images/drpdwn4-freelancer-lady.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 270px;
+    height: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+        .drpdwn5-image1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(images/drpdwn5-Mockup.png);
+            background-position: center;
+            background-size: 23rem;
+            width: 265px;
+            height: 260px;
+            border-radius: 5px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+
+
+        .drpdwn6-image1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(images/drpdwn6-customer-service.jpg);
+            background-position: right;
+            background-size: cover;
+            width: 270px;
+            height: 250px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        /* dropdown menus and effect end here */
+
+
+/* The Modal (background) */
+.modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin-top: -100px;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 100%;
+      height: 100vh;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 25px;
+      font-weight: bold;
+      margin-right:40px;
+      padding-left: 1200px;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-content form input[type=text] {
+      width: 1100px;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      outline: none;
+      border-radius: 0px 0px 25px 25px;
+      border-top: none;
+      margin-top: 18%;
+      margin-left: 50px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header>
+            <div class="log">
+                <a href="../sterling-front-page.html"> <img src="../assets/images/sterling-logo.png" alt=""
+                        width="140px" title="sterling-logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropmenu1"><a href=""><strong>PERSONAL </strong><i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown1">
+                            <div class="col-md-3"><strong>Self Service</strong>
+                                <hr>
+
+                                <a href="">
+                                    <div class="drpdwn1-effect1">
+                                        <img src="images/drpdwn1-Open-account.jpg" width="40px" alt="">
+                                        <h6 class="drpdwn1-text">Open Account </h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn1-effect2">
+                                        <img src="images/drpdwn1-cog.jpg" width="40px" alt="">
+                                        <h6 class="drpdwn1-text">Manage Account</h6><br><br><br>
+                                    </div>
+                                </a>
+                                <h5>E-Banking
+                                    <hr>
+                                </h5>
+                                <a href="">
+                                    <div class="drpdwn1-effect3">
+                                        <img src="images/drpdwn1-dl.jpg" alt="">
+                                        <h6 class="drpdwn1-text">Download OneBank</h6>
+                                        <h6 class="drpdwn-text">Mobile App</h6>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3"><strong> Account</strong>
+                                <hr>
+                                <a href="">
+                                    <div class="drpdwn1-effect4">
+                                        <img src="images/drpdwn1-savings-account.jpg" alt="" width="38px">
+                                        <h6 class="drpdwn1-text">Savings Accounts</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn1-effect5">
+                                        <img src="images/drpdwn1-current.jpg" alt="" width="38px">
+                                        <h6 class="drpdwn1-text">Current Accounts</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn1-effect6">
+                                        <img src="images/drpdwn1-investment.jpg" alt="" width="30px">
+                                        <h6 class="drpdwn1-text">Investment</h6>
+                                        <h6 class="drpdwn-text">Accounts</h6><br>
+                                    </div>
+
+                                    <div class="drpdwn1-effect7">
+                                        <img src="images/drpdwn1-More.jpg" alt="" width="38px">
+                                        <h6 class="drpdwn1-text">More...</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3"> <strong>Cards </strong>
+                                <hr>
+                                <a href="">
+                                    <div class="drpdwn1-effect8">
+                                        <img src="images/drpdwn1-Debit.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn1-text">Debit Cards</h6><br><br><br>
+                                    </div>
+
+                                    <div class="drpdwn1-effect9">
+                                        <img src="images/drpdwn1-Credit.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn1-text">credit Cards</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn1-effect10">
+                                        <img src="images/drdwn1-Prepaid.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn1-text">Prepaid Cards</h6>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col-md-3"><strong>Cards</strong>
+                                <hr>
+                                <a href="">
+                                    <div class="drpdwn1-effect11">
+                                        <img src="images/drpdwn1-Investment-2.jpg" alt="" width="30px">
+                                        <h6 class="drpdwn1-text">Investment</h6><br><br><br>
+                                    </div>
+
+                                    <div class="drpdwn1-effect12">
+                                        <img src="images/drpdwn1-Loans.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn1-text">Personal Loans</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="dropmenu2"><a href=""><strong>BUSINESS </strong><i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown2">
+                            <div class="col-md-3"><strong>CORPERATE</strong>
+                                <hr>
+                                <a href="">
+                                    <div class="drpdwn2-effect1">
+                                        <img src="images/drpdwn2-Icons.jpg" width="40px" alt="">
+                                        <h6 class="drpdwn2-text">Cards</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect2">
+                                        <img src="images/drpdwn2-Ag-Fin.jpg" width="40px" alt="">
+                                        <h6 class="drpdwn2-text">SWAY AgFin</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect3">
+                                        <img src="images/drpdwn2-Omni-X-b.jpg" alt="" width="35px">
+                                        <h6 class="drpdwn2-text">Omni X </h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect4">
+                                        <img src="images/drpdwn2-Ag-Summit.jpg" alt="" width="35px">
+                                        <h6 class="drpdwn2-text">Agric Summit</h6><br><br>
+                                    </div>
+
+                                </a>
+                                <h5>E-Banking
+                                    <hr>
+                                </h5>
+                                <a href="">
+                                    <div class="drpdwn2-effect5">
+                                        <img src="images/drpdwn2-Pro.jpg" alt="" width="35px">
+                                        <h6 class="drpdwn2-text">Sterling Pro</h6><br>
+                                        <p class="drpdwn1-p">Corporate Internet <br> Banking</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3"><strong> SME</strong>
+                                <hr>
+
+                                <a href="">
+                                    <div class="drpdwn2-effect6">
+                                        <img src="images/drpdwn2-SME-b-1.jpg" alt="" width="38px">
+                                        <h6 class="drpdwn2-text">Savings Accounts</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect7">
+                                        <img src="images/drpdwn2-Icons.jpg" alt="" width="38px">
+                                        <h6 class="drpdwn2-text">Current Accounts</h6><br><br>
+                                    </div>
+                                </a>
+                                <h6><strong>LOANS</strong></h6>
+                                <hr>
+
+                                <a href="">
+                                    <div class="drpdwn2-effect8">
+                                        <img src="images/drpdwn2-Loans-1.jpg" alt="" width="38px">
+                                        <h6 class="drpdwn2-text">Apply for a Loan</h6>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col-md-3"> <strong>PAYMENTS </strong>
+                                <hr>
+
+                                <a href="">
+                                    <div class="drpdwn2-effect9">
+                                        <img src="images/drpdwn2-Stack-b.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">AutoReg</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect10">
+                                        <img src="images/drpdwn2-Stack-b.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">Pay4Me</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect11">
+                                        <img src="images/drpdwn2-Stack-b.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">FIRS</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect12">
+                                        <img src="images/drpdown2-More-b.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">More...</h6>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-3"><strong>H.E.A.R.T</strong>
+                                <hr>
+                                <a href="">
+                                    <div class="drpdwn2-effect13">
+                                        <img src="images/drpdwn2-health.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">Health</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect14">
+                                        <img src="images/drpdwn2-edu.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">Education</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect15">
+                                        <img src="images/drpdwn2-farm.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">Agriculture</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect16">
+                                        <img src="images/drpdwn2-renewable.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">Renewable Energy</h6><br><br>
+                                    </div>
+
+                                    <div class="drpdwn2-effect17">
+                                        <img src="images/drpdwn2-car-tran-1.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn2-text">Transportation</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="dropmenu3"><a href=""><strong>ABOUT US </strong><i class="fa-solid fa-angle-down">
+                            </i></a>
+                        <div class="dropdown3">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="contained-1">
+                                        <a href="">
+                                            <div class="drpdwn3-effect1">
+                                                <img src="images/drpdwn3-Directorss.jpg" alt="" width="40px"
+                                                    class="img-drpdwn3">
+                                                <h6 class="drpdwn3-text">Board of Directors</h6>
+                                            </div>
+
+                                            <div class="drpdwn3-effect2">
+                                                <img src="images/drpdwn3-Exec.jpg" alt="" width="40px">
+                                                <h6 class="drpdwn3-text">Executive Managements</h6>
+                                            </div>
+
+                                            <div class="drpdwn3-effect3">
+                                                <img src="images/drpdwn3-events.jpg" alt="" width="40px">
+                                                <h6 class="drpdwn3-text">Events</h6>
+                                            </div>
+
+                                            <div class="drpdwn3-effect4">
+                                                <img src="images/drpdwn3-blog.jpg" alt="" width="40px">
+                                                <h6 class="drpdwn3-text">Our Blog</h6>
+                                            </div>
+
+                                            <div class="drpdwn3-effect5">
+                                                <img src="images/drpdwn3-Policy.jpg" alt="" width="40px">
+                                                <h6 class="drpdwn3-text">Our Policy</h6>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="drpdwn3-image1">
+                                        <button class="drpdwn-button1">Who We Are</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="drpdwn3-image2">
+                                        <button class="drpdwn-button2">Our Awards</button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropmenu4"><a href=""><strong>CAREERS </strong><i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown4">
+                            <div class="row">
+                                <div class="col-sm-4">
+
+                                    <div class="drpdwn4-effect1">
+                                        <img src="images/drpdwn4-life.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn4-text">Life At Sterling</h6>
+                                    </div>
+
+                                    <div class="drpdwn4-effect2">
+                                        <img src="images/drpdwn4-internship.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn4-text">Internship</h6>
+                                    </div>
+
+                                    <div class="drpdwn4-effect3">
+                                        <img src="images/drpdwn4-graduateTrainee.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn4-text">Grduate Trainee</h6>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-4">
+
+                                    <div class="drpdwn4-effect4">
+                                        <img src="images/drpdwn4-experienced.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn4-text">Experienced Hires</h6>
+                                    </div>
+
+                                    <div class="drpdwn4-effect5">
+                                        <img src="images/drpdwn4-gigit.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn4-text">Gig It</h6>
+                                    </div>
+
+                                    <div class="drpdwn4-effect6">
+                                        <img src="images/drpdwn4-Grow.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn4-text">Grow with Sterling</h6>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="drpdwn4-image1"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="dropmenu5"><a href=""><strong>INVESTORS </strong><i
+                                class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown5">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href="">
+                                        <div class="drpdwn5-effect1">
+                                            <img src="images/drpdwn5-Overview.jpg" alt="" width="40px">
+                                            <h6 class="drpdwn5-text">Investors Overview</h6>
+                                        </div>
+
+                                        <div class="drpdwn5-effect2">
+                                            <img src="images/drpdwn5-Reports.jpg" alt="" width="40px">
+                                            <h6 class="drpdwn5-text">Investors Report</h6>
+                                        </div>
+
+                                        <div class="drpdwn5-effect3">
+                                            <img src="images/drpdwn5-News.jpg" alt="" width="40px">
+                                            <h6 class="drpdwn5-text">Investor News</h6>
+                                        </div>
+
+                                        <div class="drpdwn5-effect4">
+                                            <img src="images/drpdwn5-Ratings.jpg" alt="" width="40px">
+                                            <h6 class="drpdwn5-text">Ratings</h6>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="drpdwn5-image1">
+                                        <button class="drpdwn5-button">Read Our Annual Report</button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="dropmenu6"><a href=""><strong>HELP </strong><i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown6">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="drpdwn6-effect1">
+                                        <img src="images/drpdwn6-How-to.jpg" alt="" width="35px">
+                                        <h6 class="drpdwn6-text">How to file Complaints</h6>
+                                    </div>
+
+                                    <div class="drpdwn6-effect2">
+                                        <img src="images/drpdwn6-Help.jpg" alt="" width="35px">
+                                        <h6 class="drpdwn6-text">Help Center</h6>
+                                    </div>
+
+                                    <div class="drpdwn6-effect3">
+                                        <img src="images/drpdwn6-ATM.jpg" alt="" width="35px">
+                                        <h6 class="drpdwn6-text">ATM Locator</h6>
+                                    </div>
+
+                                    <div class="drpdwn6-effect4">
+                                        <img src="images/drpdwn6-Agent-List.jpg" alt="" width="35px">
+                                        <h6 class="drpdwn6-text">Agent List</h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="drpdwn6-effect5">
+                                        <img src="images/drpdwn6-Feedback.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn6-text">Submit Feedback</h6>
+                                    </div>
+
+                                    <div class="drpdwn6-effect6">
+                                        <img src="images/drpdwn6-Whistle.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn6-text">Whistle Blowing</h6>
+                                    </div>
+
+                                    <div class="drpdwn6-effect7">
+                                        <img src="images/drpdwn6-Forms.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn6-text">Download Forms</h6>
+                                    </div>
+
+                                    <div class="drpdwn6-effect8">
+                                        <img src="images/drpdwn6-Self-verificaton.jpg" alt="" width="40px">
+                                        <h6 class="drpdwn6-text">Self Certification</h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="drpdwn6-image1">
+                                        <button class="drpdwn6-button">Contact Us</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <li class="dropmenu7"><a href=""><strong>INTERNET BANKING </strong><i
+                                class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown7">
+                            <div class="col-sm-6">
+                                <a href="">
+                                    <div class="drpdwn7-effect1">
+                                        <img src="images/drpdwn7-one.jpg" alt="" width="35px">
+                                        <h6 class="drpdwn7-text">Download OneBank</h6>
+                                        <p class="drpdwn7-para">Mobile App</p>
+                                        <button class="drpdwn7-button1">Pesonal</button>
+                                    </div>
+
+                                    <div class="drpdwn7-effect2">
+                                        <img src="images/drpdwn7-sterlinglogo.png" alt="" width="35px">
+                                        <h6 class="drpdwn7-text1">Sterling <br> Pro</h6>
+                                        <button class="drpdwn7-button2">Business</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="myBtn" class="btn btn-button"><i class="fa fa-search fa-1x" style="color: #6a6b6c;"
+                            title="Search"></i></button>
+                    </li>
+                </ul>
+            </nav>
+           
+                  
+                
+
+           
+        </header>
+
+        <div class="container-fluid">
+            <div class="image-background">
+                <div class="text-back">
+                    <h1 class="text1">Enjoy the simple life</h1>
+                    <h4>your bank experience should be quick, <br> convinient and secured</h4>
+                    <button class="btn btn-danger btn-learnmore">Learn More</button>
+
+                </div>
+                <div class="group-all">
+                    <ul>
+                        <li class="side-fixed"><a href=""><img src="../assets/images/briefcase2.png" alt=""
+                                    width="30px"><span><strong> Manage Account</strong></span></a></li>
+                        <li class="side-fixed"><a href=""><img src="../assets/images/user-id.jpg" alt=""
+                                    width="30px"><span><strong> Open Account</strong></span></a></li>
+                        <li class="side-fixed"><a href=""><img src="../assets/images/loan-logo.webp" alt=""
+                                    width="30px"><span><strong> Get A Loan</strong></span></a></li>
+                        <li class="side-fixed"><a href=""><img src="../assets/images/credit-card.png" alt=""
+                                    width="30px"><span><strong> Get A Credit Card</strong></span></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="marquee-container">
+                <h6 class="marquee">USD/NGN - BUY: 780.00, SELL: 781.00 | GBP/NGN - BUY: 967.51,
+                    SELL: 1015.61| EUR/NGN - BUY: 833.82, SELL: 873.94 | ZAR/NGN - BUY: 41.26,
+                    SELL: 43.32| PTA/INVISIBLES - 781.00 | SME - 781.00</h6>
+            </div>
+
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="image-image1">
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">ChatPay - Kiki</h5>
+                                <p class="card-text">Kiki will help you answer all your enquiries on the App which
+                                    include locating a Sterling branch or ATM closest to you, resolving
+                                    any disputes with no forms or visit to the bank, credit score much more.
+                                    Relax and let Kiki handle it. Also available on OneBank.
+                                </p>
+                                <a href=""><img src="../assets/images/playstore-logo.png" alt="" width="180px"></a>
+                                <a href=""><img src="../assets/images/apple-logo.png" alt="" width="180px"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="image-image">
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Ultra cards</h5>
+                                <p class="card-text">Enjoy excellent spending power with your Sterling Ultra Card.
+                                    It provides access to a revolving line of credit to meet financial needs of a
+                                    cardholder.
+                                    It typically gives cardholders control to manage spends against their
+                                    salary payments and investments at the end of each month.
+                                </p>
+                                <a href="#" class="btn btn-danger">Selecet Card</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="bootstrap/images/cafe-one.jpg" class="card-img-top" alt="" width="430px" height="150px">
+                    <div class="card-body">
+                        <h2 class="card-title">Café One</h2>
+                        <p class="card-text">This is a digital experience centre where premium banking services
+                            are offered at no cost.
+                            A serene environment for networking, strategy sessions
+                            and business meetings only with a cup of coffee. Open to you on weekdays and weekends
+                            too.
+                            Join our community today and experience innovation.</p>
+                        <button class="btn btn-danger">Visit Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <div class="onewoman"></div>
+
+                    <div class="card-body">
+                        <h2 class="card-title">One Woman</h2>
+                        <p class="card-text">One Woman is focused on identifying and creating
+                            solutions that cater to the financial, social,business and
+                            personal needs of the Nigerian woman.
+                            Our solutions comprise an array of value-add offerings
+                            that enable women to achieve a more fulfilling life.Ultimately,it’s a ONE-STOP SHOP.</p>
+
+                        <button class="btn btn-danger">Join Us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <div class="business-hub"></div>
+
+                    <div class="card-body">
+                        <h2 class="card-title">The Business Hub</h2>
+                        <p class="card-text">TBH is here to help you network, build your business and grow it.
+                            We have conducive meeting rooms and co-working spaces where you meet,
+                            interact and connect with people of like minds. There’s
+                            also a fashion lounge with equipment ready for your use at minimum cost.</p>
+                        <button class="btn btn-danger">Join Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <a href="">
+                            <div class="switch">
+
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h2 class="card-title">Switch</h2>
+                            <p class="card-text">Switch offers you secure, quick and convenient banking.
+                                The platform gives you easy access to multi-currency savings,
+                                cheaper transfer rates and the best lending, investment and insurance products in
+                                Nigeria.
+                                You can either carry out transactions with your wallet or account.</p>
+                            <button class="btn btn-danger">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <div class="fairpay"></div>
+                        <div class="card-body">
+                            <h2 class="card-title">Farepay</h2>
+                            <p class="card-text">This is a contactless card that is designed to make your journey
+                                around
+                                Lagos less stressful.
+                                With your ATM card, you can fund your farepay card. Then you simply “tap in and tap
+                                out”
+                                when you board the BRT buses.
+                                You no longer have to haggle prices or queue to purchase bus tickets.
+                            </p>
+                            <button class="btn btn-danger">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <div class="diaspora"></div>
+                        <div class="card-body">
+                            <h2 class="card-title">Diaspora</h2>
+                            <p class="card-text">This account offers you flexibility to open
+                                and run a sterling account from any where in the world,
+                                helping you manage your relationships in Nigeria whilst abroad.
+                                You will also have access to our digital platform, switch,
+                                where you can carry out all your banking transactions seamlessly.
+                            </p>
+                            <button class="btn btn-danger">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="../assets/images/Great-Place-awards.jpg" alt="" width="100%" class="great-award">
+        </div>
+        <div class="container">
+            <div class="shutterstock">
+
+                <div class="sub-conbined">
+                    <h3>Download the Sterling Bank Plc Annual Report 2022</h3>
+                    <button class="btn btn-danger btn-combined">Download Report</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container contain">
+            <h3 class="h3-contain">Latest News</h3>
+            <h6 class="h6-contain">Latest news, press related material, announcements and our media<br> resources.
+            </h6>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="card" style="width: 22rem;">
+                        <div class="collection"></div>
+                        <div class="card-body">
+                            <h5 class="card-the">COLLECTION OF DREAMS</h5>
+                            <p class="card-text">In the lively and bustling city of Lagos,
+                                there lived a man named Dami in the slums of Ajegunle.
+                                He had a passion for fabrics,.</p>
+                            <br>
+                            <br>
+                            <a href="#">
+                                <h6>READ MORE »
+                            </a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card" style="width: 22rem;">
+                        <div class="strategies"></div>
+                        <div class="card-body">
+                            <h5 class="card-the">Strategies for Managing Your<br> Debt</h5>
+                            <p class="card-text">Managing your debt can be tough,
+                                but it’s something many people face when they’re going through financial
+                                difficulties.
+                                The good news is that with the right</p>
+                            <a href="#">
+                                <h6>READ MORE »
+                            </a></h6>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card" style="width: 22rem;">
+                        <div class="basic-loan">
+
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-the">3 Things to do With a Specta Basic Loan</h5>
+                            <p class="card-text">Let’s talk about Specta Basic Loan and all
+                                the amazing things you can do with it.
+                                You know, when we need some financial assistance, loans </p>
+                            <a href="#">
+                                <h6>READ MORE »
+                            </a></h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="btn btn-danger button-btn-middle">Read More</button>
+
+
+    </div>
+    </div>
+    <div class="container-fluid mt-4">
+        <div class="general-info">
+
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <th>PERSONAL BANKING</th>
+                        <th>BUSINESS BANKING</th>
+                        <th>ALTERNATIVE BANKING</th>
+                        <th>ABOUT US</th>
+                        <th>HELP & SUPPORT</th>
+
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Savings</td>
+                            <td>Corporates</td>
+                            <td>SAF</td>
+                            <td>Who we are</td>
+                            <td>Feedback</td>
+                        </tr>
+
+                        <tr>
+                            <td>Current</td>
+                            <td>SME</td>
+                            <td>Private Banking</td>
+                            <td>Awards</td>
+                            <td>Contact us</td>
+                        </tr>
+
+                        <tr>
+                            <td>Investment</td>
+                            <td>Services</td>
+                            <td>Invest Now</td>
+                            <td>Board of Directors</td>
+                            <td>whistleblowing</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Loans</td>
+                            <td>Payments</td>
+                            <td>Edubanc</td>
+                            <td>Exclusive Management</td>
+                            <td>ATM Locator</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cards</td>
+                            <td>Loan</td>
+                            <td>Agriculture</td>
+                            <td>Our Policy</td>
+                            <td>Agent Banking</td>
+                        </tr>
+
+                        <tr>
+                            <td>E-channels</td>
+                            <td>H.E.A.R.T</td>
+                            <td></td>
+                            <td>Investors</td>
+                            <td>Complaints</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Careers</td>
+                            <td>Forms</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Self Saltisfied</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <footer>
+                <h6>© 2023 Sterling Bank. All Rights Reserved. Regulated by the Central <br>
+                    Bank of Nigeria.
+                </h6>
+                <div class="footer1">
+                    <ul>
+                        <li><a href="">Terms & Privacy Policy</a></li>
+                        <li><a href="">CBN Consumer Protection Regulation</a></li>
+                        <li><a href="">Responsible Disclosure Program</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <div id="myModal" class="modal">
+            
+                <!-- Modal content -->
+
+                <div class="modal-content">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <form action="" method="get">
+                        <input type="text" name="type in" placeholder="Type in for Search">
+                    </form>
+                </div>
+
+        </div>
+</body>
+<script>
+      
+
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function () {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+</html>

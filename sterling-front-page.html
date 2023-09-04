@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sterling-Bank</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./newproject/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./newproject/bootstrap/css/bootstrap.min.css" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .background-pic1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url(./assets/images/sterling-front-page1.jpg);
+            background-position: center;
+            background-size: auto;
+            width: 450px;
+            height: 90vh;
+
+        }
+
+        .background-pic2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url(./assets/images/sterling-front-page2.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 450px;
+            height: 90vh;
+
+        }
+
+        .background-pic3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url(./assets/images/sterling-front-page3.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 450px;
+            height: 90vh;
+
+        }
+
+
+
+
+        #wrapper {
+            width: 100%;
+    
+        }
+
+
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -80px;
+    position:sticky;
+    z-index: 1;
+    top: 0;
+        }
+
+        .log1{
+            display: inline-flex;
+            justify-content: space-between;
+        
+        }
+        .log2{
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+      
+
+        .general-background {
+            display: flex;
+            width: 100%;
+        }
+
+        .background-pic1 a{
+            text-decoration: none;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding-top: 455px;
+            color: whitesmoke;
+        }
+
+        .buttom1{
+            color: white;
+            background: red;
+            padding: 5px;
+            border: none;
+            width: 40px;
+            border-radius: 20px 0px 0px 20px;
+            margin-right: -5px;
+            padding-left: 20px;
+        }
+
+        .buttom2{
+            padding: 10px;
+            background: red;
+            width: 150px;
+            border: none;
+            color: white;
+            padding-right:23px;
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        img{
+            border-radius: 40px;
+            margin-left: 20px;
+            
+        }
+
+        .span-image{
+            font-size: 40px;
+            color: white;
+            /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            padding-top: 190px;
+    
+        }
+
+        .side-span{
+            display: none;
+            background: #fff;
+            width: 150px;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px rgb(186, 184, 184);
+            margin-left: 13px;
+            border-radius: 15px;
+            position: absolute;
+
+        }
+
+        .side-fixed:hover span{
+            display: inline;
+        }
+       
+        .group-all a{
+            color: black;
+        }
+
+    .group-all{
+    position: fixed;
+    z-index: 1;
+    height: 200px;
+    margin: -320px 0;
+    width: 40px;
+    background: white;
+    border-radius: 0px 15px 15px 0px;
+    }
+
+.group-all ul li{
+    display: block;
+    list-style-type:none;
+    padding: 10px 0;
+    margin-left: -15px;
+    position: relative;
+    left: 0;
+
+}
+
+
+.group-all ul{
+    margin: 0;
+    padding: 0;
+}  
+
+.group-all ul li:hover {
+    background: lightblue;  
+}
+
+
+    </style>
+</head>
+
+<div id="wrapper">
+    <header>
+        <div class="log">
+            <img src="./assets/images/sterlinglogo-whats.jpeg" alt="" width="70px" title="sterling-logo">
+            <span class="span-image"><strong><em>Sterling</em></strong></span>
+        </div>
+        <div class="log2">
+            <button class="buttom1"><i class="fas fa-lock"></i></button>
+            <button class="buttom2">Internet Banking</button>
+        </div>
+    </header>
+    <div class="general-background">
+
+        <div class="background-pic1">
+            <a href="./assets/sterlying-bank.html">
+            <h1>Personal</h1>
+        </a>
+
+        <div class="group-all">
+            <ul>
+                <li class="side-fixed"><a href=""><img src="../assets/images/briefcase2.png" alt="" width="30px"><span class="side-span"><strong> Manage Account</strong></span></a></li>
+                <li class="side-fixed"><a href=""><img src="../assets/images/user-id.jpg" alt="" width="30px"><span class="side-span"><strong> Open Account</strong></span></a></li>
+                <li class="side-fixed"><a href=""><img src="../assets/images/loan-logo.webp" alt="" width="30px"><span class="side-span"><strong> Get A Loan</strong></span></a></li>
+                <li class="side-fixed"><a href=""><img src="../assets/images/credit-card.png" alt="" width="30px"><span class="side-span"><strong> Get A Credit Card</strong></span></a></li>
+            </ul>
+    
+        </div>
+        </div>
+
+
+        <div class="background-pic2">
+            <h1>Business</h1>
+
+        </div>
+
+
+        <div class="background-pic3">
+
+            <h1>Alternative</h1>
+        </div>
+
+        
+    </div>
+   
+</div>
+
+<body></body>
+
+</html>

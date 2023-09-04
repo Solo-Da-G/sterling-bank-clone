@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/newproject/fontawesome/css/all.css">
+    
+    <title>Geocompany</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* background:orange; */
+        }
+
+        #wrapper {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+       
+        }
+
+        nav {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 10px;
+         
+
+
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav ul li :hover {
+            color: lightsalmon;
+            /* background-color: grey; */
+            padding:10px;
+            border-radius: 8px;
+        }
+
+        .social-networks ul li {
+            display: inline-block;
+            padding: 5px 10px;
+            width: 70px;
+           
+        }
+
+        .social-networks a:hover {
+            border-bottom: 4px solid red;
+            width: 300px;
+            transition: ease-out 0.5s;
+
+        }
+
+
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .col-md-4 {
+            width: 33%;
+            height: 475px;
+            background: #f7f7f7;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 2px 2px #e7e5e5;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 25px;
+            width: 10%;
+            text-align: center;
+            background-color: red;
+            border: 1px solid whitesmoke;
+            box-shadow: 1px 1px 1px 1px #e7e5e5;
+            border-radius: 5px;
+        }
+        .drip{
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown{
+            position: absolute;
+            display: none;
+            z-index: 1;
+            margin-right: -60px;
+            width: 130px;
+            background-color: whitesmoke;
+            padding: 10px;
+            
+
+        }
+        .dropdown  a{
+            text-decoration: none;
+            display: block;
+            color: black;
+        }
+            .drip:hover .dropdown{
+                display: block;
+            }
+        
+        
+     
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logo"><a href=""><i class="fas fa-bars fa-2x"></i></a></div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Service</a></li>
+                    <li class="drip"><a href="">Our Address</a>
+                    <ul class="dropdown">
+                        <li><a href="">Abuja</a></li>
+                        <li><a href="">Lagos</a></li>
+                        <li><a href="">Port Harcourt</a></li>
+                        <li><a href="">Benin</a></li>
+                        <li><a href="">Sokoto</a></li>
+                    </ul>
+                    </li>
+
+                    <li ><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-networks">
+                <ul>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="content">
+            <div class="col-md-4">
+                <div class="image">
+                    <img src="newproject/img/pple4.avif" alt="" width="100%" height="50%">
+                    <h4>Mission Statement</h4>
+                    <P>Our mission is to make the World a better place inoder to reduces stress
+                        and time wasted of time
+                        Our mission is to make the World a better place inoder to reduces
+                        stress and time wasted of time.
+                    </P>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text">
+                    <img src="newproject/img/pple2.avif" alt="" width="100%">
+                    <h4>Vision Statement</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolore,
+                        tempore reprehenderit omnis voluptate
+                        natus corrupti vel nulla temporibus saepe,
+                        ad ipsa corporis libero possimus, debitis maiores quasi totam rerum.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="/newproject/img/pple1.avif" alt="" width="100%">
+                <h4>Our Vision</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad sit quaerat placeat
+                    ab? Veniam, quibusdam. Distinctio repellat quos natus orem ipsum
+                    dolor sit amet consectetur adipisicing elit.
+                    Consequatur ad sit quaerat placeat
+                    ab? Veniam, quibusdam. Distinctio repellat quos natus orem ipsum dolor sit amet
+                    consectetur </p>
+            </div>
+        </section>
+    </div>
+    <br>
+    <button><a href="">LearnMore</a></button>
+</body>
+
+</html>

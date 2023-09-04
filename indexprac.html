@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: o;
+            background-color: lightslategray;
+        }
+
+        #wrapper{
+          width: 100%;
+         margin: 0 auto;
+         
+
+        }
+
+        
+        header {
+            background-color: lightgrey;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+
+        nav {
+            padding: 0;
+            margin: 0;
+        }
+
+
+
+        nav ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 15px;
+
+
+        }
+
+
+li a, .dropbtn {
+  display: inline-block;
+  color: navy;
+  text-align: center;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+ 
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #0000; */
+  /* min-width: 160px; */
+  box-shadow: 0px 10px 20px 0px rgb(81, 64, 58);
+  /* z-index: 1; */
+}
+
+.dropdown-content a {
+  color: navy;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+<header>
+  <nav>
+<ul>
+  <li><a href="">Home</a></li>
+  <li><a href="">News</a></li>
+  <li class="dropdown">
+    <a href="" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a href="">Open Savings Account</a>
+      <a href="">Open Current Account</a>
+      <a href="">Open Joint Account</a>
+      <a href="">Personal Banking</a>
+      <a href="indexpcsavings.html">Business Banking</a>
+    </div>
+    </div>
+  </li>
+</ul>
+</nav>
+</header>
+</body>
+</html>

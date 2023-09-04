@@ -1,0 +1,388 @@
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    margin:0 auto;
+}
+
+header {
+    background: #195c92;
+    padding: 30px;
+    position: fixed;
+    top: 1px;
+    z-index: 1;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+
+
+
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header .container ul li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 10px;
+
+}
+
+header .container .btn button {
+    background: #f26522;
+    padding: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}
+
+.home {
+    margin-top: 90px;
+    height: 600px;
+    background: #195c92;
+}
+
+.home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .container .showcase-left {
+    width: 480px;
+    color: #fff;
+}
+
+.home .container .showcase-left h1 {
+    font-size: 70px;
+    line-height: 4rem;
+    padding-bottom: 20px;
+    font-style: normal;
+}
+
+.home .container {
+    color: white;
+    line-height: 2rem;
+    font-size: 17px;
+}
+
+.home-btn {
+    margin-top: 20px;
+
+}
+
+.home-btn .btn-bg-orange {
+    width: 150px;
+    padding: 20px;
+    color: #fff;
+    background: #f26522;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.home-btn button {
+    width: 150px;
+    padding: 20px;
+    border: 3px solid #f26522;
+    border-radius: 5px;
+    font-size: 16px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.aboutus {
+    /* background: #f7f7f7; */
+    padding-top: 100px;
+}
+
+.aboutus .container h2 {
+    font-size: 60px;
+    text-align: center;
+    line-height: 4rem;
+    color: rgb(72, 69, 69);
+    margin-bottom: 30px;
+}
+
+.aboutus .container p {
+    font-size: 18px;
+    line-height: 2rem;
+    padding-bottom: 15px;
+    color: rgb(72, 69, 69);
+    display: flex;
+    justify-content: space-between;
+}
+
+.parabut {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.aboutus .container button {
+    padding: 20px;
+    width: 150px;
+    background: #f26522;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+
+
+.services {
+    margin-top: 90px;
+    height: 450px;
+    background: rgb(241, 245, 246)
+}
+
+.container {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.services .container h3 {
+    font-size: 60px;
+    color: rgb(79, 77, 77);
+    padding-top: 160px;
+
+}
+
+.services .container .col-md-4 h4 {
+    padding: 10px 0px;
+    /* background-color: white; */
+    /* width: 230px;
+    height: 150px; */
+    box-shadow: white;
+    font-size: 23px;
+    text-align: center;
+    color: rgb(58, 57, 57);
+
+}
+
+
+.services .container #coverall {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #overall{
+    padding-bottom: 190px;
+} */
+
+
+.services .container #coverall .col-md-4 {
+    background-color: white;
+    padding: 10px 40px;
+    height: 150px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.services .container #coverall .col-md-4 .img {
+    margin-top: 50px;
+
+}
+
+.projects {
+    height: 1000px;
+    background-color: white;
+}
+
+.projects .container h3 {
+    font-size: 55px;
+    text-align: center;
+    line-height: 4rem;
+    color: rgb(72, 69, 69);
+    margin-bottom: 80px;
+
+}
+
+.projects .container .showpics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    gap: 13px;
+
+}
+
+.projects .container h4 {
+    font-size: 18px;
+    color: #a4a0a8;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 120px;
+    background: whitesmoke
+}
+
+.projects .container h5 {
+    font-size: 18px;
+    color: rgb(50, 48, 48);
+    text-align: center;
+    margin-top: 30px;
+
+
+}
+
+.projects .container p {
+    font-size: 16px;
+    color: #675676;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.projects .container #groupbox {
+    /* width: 1296px; */
+    padding: 50px 300px;
+    background: whitesmoke;
+    align-items: center;
+    margin-top: 80px;
+    position:absolute;
+}
+
+.contact {
+    height: 550px;
+    background: #195c92;
+
+}
+
+.contact .container h3 {
+    margin-top: 35px;
+    font-size: 55px;
+    color: white;
+    padding: 70px;
+    text-align: center;
+
+}
+
+.contact .container .packing {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.contact .container .packing .col-md-1 h5 {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 4rem;
+}
+
+
+.contact .container .packing .col-md-2 h5 {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 4rem;
+}
+
+.contact .container .packing .col-md-3 h5 {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 4rem;
+}
+
+.contact .container h3{
+padding-top: 180px;
+}
+
+.contact .container .packing .col-md-1 .img {
+    margin-left: 95px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.contact .container .packing .col-md-2 .img {
+    margin-left: 48px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.contact .container .packing .col-md-3 .img {
+    margin-left: 60px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+footer {
+    
+    padding: 40px;
+    background: white;
+}
+
+footer .footend {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+footer #imagelogos {
+
+    cursor: pointer;
+    margin-right: 80px;
+
+
+}
+
+
+footer .footend h4 {
+    color: rgba(137, 134, 134, 0.853);
+    font-size: 17px;
+    margin-left: 50px;
+}
+
