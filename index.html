@@ -19,7 +19,7 @@
             background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
                 url(./assets/images/sterling-front-page1.jpg);
             background-position: center;
-            background-size: auto;
+            background-size: cover;
             width: 450px;
             height: 90vh;
 
@@ -50,38 +50,41 @@
 
         #wrapper {
             width: 100%;
-    
+
         }
 
 
-    header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: -80px;
-    position:sticky;
-    z-index: 1;
-    top: 0;
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: -80px;
+            position: sticky;
+            z-index: 1;
+            top: 0;
         }
 
-        .log1{
+        .log1 {
             display: inline-flex;
             justify-content: space-between;
-        
+            align-items: center;
+            margin-top: 50px;
+
         }
-        .log2{
+
+        .log2 {
             display: inline-flex;
             justify-content: space-between;
         }
 
-      
+
 
         .general-background {
             display: flex;
-            width: 100%;
+            /* width: 32%; */
         }
 
-        .background-pic1 a{
+        .background-pic1 a {
             text-decoration: none;
         }
 
@@ -92,7 +95,7 @@
             color: whitesmoke;
         }
 
-        .buttom1{
+        .buttom1 {
             color: white;
             background: red;
             padding: 5px;
@@ -103,31 +106,37 @@
             padding-left: 20px;
         }
 
-        .buttom2{
+        .buttom2 {
             padding: 10px;
             background: red;
             width: 150px;
             border: none;
             color: white;
-            padding-right:23px;
+            padding-right: 23px;
             border-radius: 0px 20px 20px 0px;
         }
 
-        img{
+        img {
             border-radius: 40px;
             margin-left: 20px;
-            
+
         }
 
-        .span-image{
-            font-size: 40px;
+
+        .img2 {
+            /* width: 10px; */
+        }
+
+        .span-image {
+            position: absolute;
+            font-size: 35px;
             color: white;
             /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-            padding-top: 190px;
-    
+            margin-bottom: -10px;
+
         }
 
-        .side-span{
+        .side-span {
             display: none;
             background: #fff;
             width: 150px;
@@ -140,92 +149,138 @@
 
         }
 
-        .side-fixed:hover span{
+        .side-fixed:hover span {
             display: inline;
         }
-       
-        .group-all a{
+
+        .group-all a {
             color: black;
         }
 
-    .group-all{
-    position: fixed;
-    z-index: 1;
-    height: 200px;
-    margin: -320px 0;
-    width: 40px;
-    background: white;
-    border-radius: 0px 15px 15px 0px;
-    }
+        .group-all {
+            position: fixed;
+            z-index: 1;
+            height: 200px;
+            margin: -320px 0;
+            width: 40px;
+            background: white;
+            border-radius: 0px 15px 15px 0px;
+        }
 
-.group-all ul li{
-    display: block;
-    list-style-type:none;
-    padding: 10px 0;
-    margin-left: -15px;
-    position: relative;
-    left: 0;
+        .group-all ul li {
+            display: block;
+            list-style-type: none;
+            padding: 10px 0;
+            margin-left: -15px;
+            position: relative;
+            left: 0;
 
-}
-
-
-.group-all ul{
-    margin: 0;
-    padding: 0;
-}  
-
-.group-all ul li:hover {
-    background: lightblue;  
-}
+        }
 
 
+        .group-all ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .group-all ul li:hover {
+            background: lightblue;
+        }
+
+
+        @media screen and (max-width: 500px) and (min-width: 350px) {
+            .buttom2 {
+                display: none;
+                padding: 10px;
+                background: red;
+                width: 150px;
+                border: none;
+                color: white;
+                padding-right: 23px;
+                border-radius: 0px 20px 20px 0px;
+            }
+
+            .buttom1 {
+            display: none;
+            color: white;
+            background: red;
+            padding: 5px;
+            border: none;
+            width: 40px;
+            border-radius: 20px 0px 0px 20px;
+            margin-right: -5px;
+            padding-left: 20px;
+        }
+
+        }
     </style>
 </head>
+<div class="container-fluid">
 
-<div id="wrapper">
-    <header>
-        <div class="log">
-            <img src="./assets/images/sterlinglogo-whats.jpeg" alt="" width="70px" title="sterling-logo">
-            <span class="span-image"><strong><em>Sterling</em></strong></span>
+    <div id="wrapper">
+        <header>
+            <div class="log">
+                <img src="./assets/images/sterlinglogo-whats.jpeg" alt="" width="70px" class="img2"
+                    title="sterling-logo">
+                <span class="span-image"><strong><em>Sterling</em></strong></span>
+            </div>
+            <div class="log2">
+                <button class="buttom1"><i class="fas fa-lock"></i></button>
+                <button class="buttom2">Internet Banking</button>
+            </div>
+        </header>
+        <div class="contain">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="background-pic1">
+                        <a href="./assets/sterlying-bank.html">
+                            <h1>Personal</h1>
+                        </a>
+
+                        <div class="group-all">
+                            <ul>
+                                <li class="side-fixed"><a href=""><img src="../assets/images/briefcase2.png" alt=""
+                                            width="30px"><span class="side-span"><strong> Manage
+                                                Account</strong></span></a>
+                                </li>
+                                <li class="side-fixed"><a href=""><img src="../assets/images/user-id.jpg" alt=""
+                                            width="30px"><span class="side-span"><strong> Open
+                                                Account</strong></span></a></li>
+                                <li class="side-fixed"><a href=""><img src="../assets/images/loan-logo.webp" alt=""
+                                            width="30px"><span class="side-span"><strong> Get A Loan</strong></span></a>
+                                </li>
+                                <li class="side-fixed"><a href=""><img src="../assets/images/credit-card.png" alt=""
+                                            width="30px"><span class="side-span"><strong> Get A Credit
+                                                Card</strong></span></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="background-pic2">
+                        <h1>Business</h1>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="background-pic3">
+
+                        <h1>Alternative</h1>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-        <div class="log2">
-            <button class="buttom1"><i class="fas fa-lock"></i></button>
-            <button class="buttom2">Internet Banking</button>
-        </div>
-    </header>
-    <div class="general-background">
 
-        <div class="background-pic1">
-            <a href="./assets/sterlying-bank.html">
-            <h1>Personal</h1>
-        </a>
-
-        <div class="group-all">
-            <ul>
-                <li class="side-fixed"><a href=""><img src="../assets/images/briefcase2.png" alt="" width="30px"><span class="side-span"><strong> Manage Account</strong></span></a></li>
-                <li class="side-fixed"><a href=""><img src="../assets/images/user-id.jpg" alt="" width="30px"><span class="side-span"><strong> Open Account</strong></span></a></li>
-                <li class="side-fixed"><a href=""><img src="../assets/images/loan-logo.webp" alt="" width="30px"><span class="side-span"><strong> Get A Loan</strong></span></a></li>
-                <li class="side-fixed"><a href=""><img src="../assets/images/credit-card.png" alt="" width="30px"><span class="side-span"><strong> Get A Credit Card</strong></span></a></li>
-            </ul>
-    
-        </div>
-        </div>
-
-
-        <div class="background-pic2">
-            <h1>Business</h1>
-
-        </div>
-
-
-        <div class="background-pic3">
-
-            <h1>Alternative</h1>
-        </div>
-
-        
     </div>
-   
 </div>
 
 <body></body>
