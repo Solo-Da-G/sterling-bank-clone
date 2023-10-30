@@ -20,12 +20,9 @@
 
 
     <title>MyPersonal-Sterling Bank</title>
-    
+
 
     <style>
-       
-
-        
         /* These css background images sometimes work better
        when its style in the html. */
 
@@ -186,14 +183,14 @@
 
 
         .drpdwn4-image1 {
-    background-image: url(images/drpdwn4-freelancer-lady.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 270px;
-    height: 200px;
-    border-radius: 4px;
-    cursor: pointer;
-}
+            background-image: url(images/drpdwn4-freelancer-lady.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 270px;
+            height: 200px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
 
         .drpdwn5-image1 {
@@ -225,69 +222,68 @@
         /* dropdown menus and effect end here */
 
 
-/* The Modal (background) */
-.modal {
-      display: none;
-      /* Hidden by default */
-      position: fixed;
-      /* Stay in place */
-      z-index: 1;
-      /* Sit on top */
-      padding-top: 100px;
-      /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%;
-      /* Full width */
-      height: 100%;
-      /* Full height */
-      overflow: auto;
-      /* Enable scroll if needed */
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(0, 0, 0, 0.4);
-      /* Black w/ opacity */
-    }
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
 
-    /* Modal Content */
-    .modal-content {
-      background-color: #fefefe;
-      margin-top: -100px;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 100%;
-      height: 100vh;
-    }
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin-top: -100px;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 100%;
+            height: 100vh;
+        }
 
-    /* The Close Button */
-    .close {
-      color: #aaaaaa;
-      float: right;
-      font-size: 25px;
-      font-weight: bold;
-      margin-right:60px;
-      padding-left: 1050px;
-    }
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 60px;
+            padding-left: 1050px;
+        }
 
-    .close:hover,
-    .close:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-    .modal-content form input[type=text] {
-      width: 1000px;
-      padding: 10px;
-      text-align: center;
-      font-size: 20px;
-      outline: none;
-      border-radius: 0px 0px 25px 25px;
-      border-top: none;
-      margin-top: 18%;
-      margin-left: 50px;
-    }
-
+        .modal-content form input[type=text] {
+            width: 1000px;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            outline: none;
+            border-radius: 0px 0px 25px 25px;
+            border-top: none;
+            margin-top: 18%;
+            margin-left: 50px;
+        }
     </style>
 </head>
 
@@ -297,8 +293,8 @@
 
         <header>
             <div class="log">
-                <a href="../index.html"> <img src="../assets/images/sterling-logo.png" alt=""
-                        width="140px" title="sterling-logo"></a>
+                <a href="../index.html"> <img src="../assets/images/sterling-logo.png" alt="" width="140px"
+                        title="sterling-logo"></a>
             </div>
             <nav>
                 <ul>
@@ -745,15 +741,24 @@
                     </li>
                     <li>
                         <button id="myBtn" class="btn btn-button"><i class="fa fa-search fa-1x" style="color: #6a6b6c;"
-                            title="Search"></i></button>
+                                title="Search"></i></button>
                     </li>
+
                 </ul>
             </nav>
-           
-                  
-                
+            <button onclick="return Phoneresponsiveness()" class="button-menu-respon"><i class="fa-solid fa-bars fa-1x"></i></button>
 
-           
+            <div class="menu-icon" id="menu">
+                <ul id="response">
+                    <li>menu</li>
+                    <li>about uss</li>
+                    <li>home</li>
+                </ul>
+            </div>
+
+
+
+
         </header>
 
         <div class="container-fluid">
@@ -1121,23 +1126,51 @@
         </div>
 
         <div id="myModal" class="modal">
-            
-                <!-- Modal content -->
 
-                <div class="modal-content">
-                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
-                    <form action="" method="get">
-                        <input type="text" name="type in" placeholder="Type in for Search">
-                    </form>
-                </div>
+            <!-- Modal content -->
+
+            <div class="modal-content">
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                <form action="" method="get">
+                    <input type="text" name="type in" placeholder="Type in for Search">
+                </form>
+            </div>
 
         </div>
 </body>
 <script>
-      
-
     // Get the modal
-var modal = document.getElementById("myModal");
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function Phoneresponsiveness() {
+        document.getElementById('menu').style.display = "block";
+    }
+
+
+    var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -1147,20 +1180,21 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
-modal.style.display = "block";
+    modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-modal.style.display = "none";
+    modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-if (event.target == modal) {
-modal.style.display = "none";
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
-}
+
 </script>
 
 </html>

@@ -1394,7 +1394,7 @@ h6 {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 2px;
     list-style: none;
 
 }
@@ -1404,6 +1404,24 @@ h6 {
     color: rgb(214, 211, 211);
     font-size: 13px;
 }
+
+.menu-icon{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin-top: 280px;
+}
+
+.button-menu-respon{
+    display: none;
+    size: 40px;
+    padding: 10px;
+    background: skyblue;
+    border: none;
+}
+
+/* FOR RESPOSIVENESS */
 
 @media screen and (max-width: 490px){
   
@@ -1465,6 +1483,47 @@ h6 {
     
     .card-body img{
         width: 140px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
+        width: 100%;
+        background: rgb(78, 77, 77);
+    
+    }
+    
+    h6 {
+        font-size: 10px;
+        color: rgb(214, 211, 211);
+        padding-left: 40px;
+    }
+
+    .footer1 ul li {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        list-style: none;
+        font-size: 10px;
+    
+    }
+    
+    .footer1 a {
+        text-decoration: none;
+        color: rgb(214, 211, 211);
+        font-size: 10px;
+    }
+
+    .button-menu-respon{
+        display: flex;
+        size: 40px;
+        padding: 10px;
+        background: skyblue;
+        border: none;
+        margin-bottom: 70px;
     }
     
 }
