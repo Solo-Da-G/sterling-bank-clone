@@ -638,7 +638,7 @@ hr {
 }
 
 
-        
+
 .drpdwn3-image2:hover {
     opacity: 0.9;
 }
@@ -1118,7 +1118,7 @@ hr {
     cursor: pointer;
 }
 
-   
+
 
 .drpdwn7-text:hover {
     color: red;
@@ -1141,6 +1141,7 @@ hr {
 .drpdwn7-effect1:hover {
     transform: scale(1.1);
 }
+
 .drpdwn7-effect1:hover .drpdwn7-text {
     color: rgb(233, 70, 70);
 }
@@ -1152,25 +1153,27 @@ hr {
 .drpdwn7-effect2:hover {
     transform: scale(1.1);
 }
+
 .drpdwn7-effect2:hover .drpdwn7-text1 {
     color: rgb(233, 70, 70);
 }
-.dropdown6 img{
+
+.dropdown6 img {
     cursor: pointer;
 }
 
 /* dropdown menu effects end here */
 
 
-.btn-learnmore{
+.btn-learnmore {
     margin-top: 30px;
     background: #D92128;
     width: 120px;
 }
 
-.btn-learnmore:hover{
-background:none;
-border: none;
+.btn-learnmore:hover {
+    background: none;
+    border: none;
 }
 
 
@@ -1236,8 +1239,8 @@ border: none;
 
 }
 
-.group-all a{
-color: black;
+.group-all a {
+    color: black;
 }
 
 .group-all li:hover {
@@ -1264,7 +1267,7 @@ color: black;
     border-radius: 15px;
     margin-top: 120px;
     margin-left: 200px;
-   
+
 }
 
 h3 {
@@ -1405,7 +1408,7 @@ h6 {
     font-size: 13px;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
     width: 200px;
     height: 200px;
@@ -1413,7 +1416,7 @@ h6 {
     margin-top: 280px;
 }
 
-.button-menu-respon{
+.button-menu-respon {
     display: none;
     size: 40px;
     padding: 10px;
@@ -1421,12 +1424,78 @@ h6 {
     border: none;
 }
 
+.modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content1 {
+    background-color: #fefefe;
+    margin-top: -100px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    height: 60vh;
+}
+
+
+.modal-content1 ul li {
+    list-style: none;
+    align-content: space-between;
+    color: #000;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn1 {
+    display: none;
+    margin-bottom: 70px;
+}
+
+
+/* The Close Button */
+.close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 60px;
+    padding-left: 1050px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* FOR RESPOSIVENESS */
 
-@media screen and (max-width: 490px){
-  
+@media screen and (max-width: 880px) {
+
     header {
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -1444,10 +1513,11 @@ h6 {
         justify-content: space-between;
         list-style: none;
         padding: 15px;
-    
-    
+
+
     }
-    .log img{
+
+    .log img {
         margin-bottom: 60px;
     }
 
@@ -1461,8 +1531,8 @@ h6 {
         border-radius: 15px;
         margin-top: 120px;
         margin-left: 230px;
-        
-    
+
+
     }
 
     .btn-combined {
@@ -1470,7 +1540,7 @@ h6 {
         margin-left: 38px;
         padding: 3px 7px 3px 7px;
         font-size: 10px;
-    
+
     }
 
     h3 {
@@ -1478,10 +1548,10 @@ h6 {
         padding-left: 40px;
         padding-top: 40px;
         color: rgb(78, 77, 77);
-        font-size:13px;
+        font-size: 13px;
     }
-    
-    .card-body img{
+
+    .card-body img {
         width: 140px;
     }
 
@@ -1492,9 +1562,9 @@ h6 {
         height: 90px;
         width: 100%;
         background: rgb(78, 77, 77);
-    
+
     }
-    
+
     h6 {
         font-size: 10px;
         color: rgb(214, 211, 211);
@@ -1508,23 +1578,27 @@ h6 {
         padding: 0px;
         list-style: none;
         font-size: 10px;
-    
+
     }
-    
+
     .footer1 a {
         text-decoration: none;
         color: rgb(214, 211, 211);
         font-size: 10px;
     }
 
-    .button-menu-respon{
+    .btn1 {
         display: flex;
-        size: 40px;
-        padding: 10px;
-        background: skyblue;
-        border: none;
         margin-bottom: 70px;
     }
-    
-}
 
+    .modal-content1 ul li {
+        list-style: none;
+        align-content: space-between;
+        color: #000;
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+
+}
