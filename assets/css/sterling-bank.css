@@ -1469,7 +1469,13 @@ h6 {
 .btn1 {
     display: none;
     margin-bottom: 70px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    padding: 10px;
+
 }
+
 
 
 /* The Close Button */
