@@ -1605,6 +1605,12 @@ h6 {
         padding: 5px;
         cursor: pointer;
     }
+    .modal-content1 li:hover{
+        background: #540305;
+        color: whitesmoke;
+       
+        
+    }
     
 
 }
