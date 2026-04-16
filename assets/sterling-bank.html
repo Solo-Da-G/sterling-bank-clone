@@ -2,24 +2,22 @@
 <html lang="en">
 
 <head>
+    <!-- Site Title -->
+    <title>Personal - Sterling Bank Clone</title>
+
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
 
-    <!-- Downloaded bootstrap Library -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./fontawesome/css/all.css">
-    <link rel="stylesheet" href="../assets/css/sterling-bank.css">
+    <!-- Libraries -->
+    <link rel="stylesheet" href="../newproject/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="stylesheet" href="./css/sterling-bank.css">
 
-    <!-- javascript library -->
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
-
-    <title>MyPersonal-Sterling Bank</title>
+    <!-- Bootstrap JS Bundle -->
+    <script src="../newproject/bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
 
     <style>
@@ -29,7 +27,7 @@
 
         .image-background {
             background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url(../assets/images/sterling-background.jpg);
+                url(./images/sterling-background.jpg);
             background-position: center;
             background-size: cover;
             width: auto;
@@ -40,10 +38,10 @@
 
 
         .image-image {
-            background-image: url(./bootstrap/images/12.png);
+            background-image: url(./images/12.png);
             background-position: center;
             background-size: cover;
-            width: 450pxpx;
+            width: 450px;
             height: 225px;
             border-radius: 12px 12px 0px 0px;
         }
@@ -84,7 +82,7 @@
         }
 
         .onewoman {
-            background: url("bootstrap/images/sterling-one-woman-card-BG-img.jpg");
+            background: url("./images/sterling-one-woman-card-BG-img.jpg");
             background-size: cover;
             background-position: center;
             height: 150px;
@@ -161,7 +159,7 @@
 
         .drpdwn3-image1 {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url(images/drpdwn3-directors-Phone-1.png);
+                url(./images/drpdwn3-directors-Phone-1.png);
             background-position: right;
             background-size: cover;
             width: 270px;
@@ -172,7 +170,7 @@
 
         .drpdwn3-image2 {
             background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url(images/drpdwn3-award.jpg);
+                url(./images/drpdwn3-award.jpg);
             background-position: center;
             background-size: cover;
             width: 270px;
@@ -195,7 +193,7 @@
 
         .drpdwn5-image1 {
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url(images/drpdwn5-Mockup.png);
+                url(./images/drpdwn5-Mockup.png);
             background-position: center;
             background-size: 23rem;
             width: 265px;
@@ -249,21 +247,25 @@
         /* Modal Content */
         .modal-content {
             background-color: #fefefe;
-            margin-top: -100px;
+            margin: -100px auto 0;
             padding: 20px;
             border: 1px solid #888;
             width: 100%;
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* The Close Button */
         .close {
             color: #aaaaaa;
-            float: right;
+            position: absolute;
+            top: 20px;
+            right: 30px;
             font-size: 25px;
             font-weight: bold;
-            margin-right: 60px;
-            padding-left: 1050px;
+            z-index: 10;
         }
 
         .close:hover,
@@ -274,15 +276,16 @@
         }
 
         .modal-content form input[type=text] {
-            width: 1000px;
+            width: 100%;
+            max-width: 1000px;
             padding: 10px;
             text-align: center;
-            font-size: 20px;
+            font-size: clamp(1rem, 4vw, 1.25rem);
             outline: none;
             border-radius: 0px 0px 25px 25px;
             border-top: none;
-            margin-top: 18%;
-            margin-left: 50px;
+            margin: 18% auto 0;
+            display: block;
         }
     </style>
 </head>
@@ -395,7 +398,7 @@
                     <li class="dropmenu2"><a href=""><strong>BUSINESS </strong><i class="fa-solid fa-angle-down"></i>
                         </a>
                         <div class="dropdown2">
-                            <div class="col-md-3"><strong>CORPERATE</strong>
+                            <div class="col-md-3"><strong>CORPORATE</strong>
                                 <hr>
                                 <a href="">
                                     <div class="drpdwn2-effect1">
@@ -587,7 +590,7 @@
 
                                     <div class="drpdwn4-effect3">
                                         <img src="images/drpdwn4-graduateTrainee.jpg" alt="" width="40px">
-                                        <h6 class="drpdwn4-text">Grduate Trainee</h6>
+                                        <h6 class="drpdwn4-text">Graduate Trainee</h6>
                                     </div>
                                 </div>
 
@@ -727,7 +730,7 @@
                                         <img src="images/drpdwn7-one.jpg" alt="" width="35px">
                                         <h6 class="drpdwn7-text">Download OneBank</h6>
                                         <p class="drpdwn7-para">Mobile App</p>
-                                        <button class="drpdwn7-button1">Pesonal</button>
+                                        <button class="drpdwn7-button1">Personal</button>
                                     </div>
 
                                     <div class="drpdwn7-effect2">
@@ -754,7 +757,7 @@
             <div class="image-background">
                 <div class="text-back">
                     <h1 class="text1">Enjoy the simple life</h1>
-                    <h4>your bank experience should be quick, <br> convinient and secured</h4>
+                    <h4>your bank experience should be quick, <br> convenient and secured</h4>
                     <button class="btn btn-danger btn-learnmore">Learn More</button>
 
                 </div>
@@ -812,7 +815,7 @@
                                     It typically gives cardholders control to manage spends against their
                                     salary payments and investments at the end of each month.
                                 </p>
-                                <a href="#" class="btn btn-danger">Selecet Card</a>
+                                <a href="#" class="btn btn-danger">Select Card</a>
                             </div>
                         </div>
                     </div>
@@ -828,7 +831,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card shadow-lg">
-                    <img src="bootstrap/images/cafe-one.jpg" class="card-img-top" alt="" width="430px" height="150px">
+                    <img src="./images/cafe-one.jpg" class="card-img-top" alt="" width="430px" height="150px">
                     <div class="card-body">
                         <h2 class="card-title">Café One</h2>
                         <p class="card-text">This is a digital experience centre where premium banking services
@@ -932,7 +935,7 @@
         </div>
 
         <div class="container">
-            <img src="../assets/images/Great-Place-awards.jpg" alt="" width="100%" class="great-award">
+            <img src="./images/Great-Place-awards.jpg" alt="" width="100%" class="great-award">
         </div>
         <div class="container-fluid">
             <div class="shutterstock">
@@ -1092,7 +1095,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>Self Saltisfied</td>
+                            <td>Self Satisfied</td>
                         </tr>
 
 
@@ -1138,19 +1141,15 @@
                     <li>PERSONAL</li>
                     <li>BUSINESS</li>
                     <li>ABOUT US</li>
-                    <li>CARRERS</li>
+                    <li>CAREERS</li>
                     <li>INVESTORS</li>
                     <li>INTERNET BANKING</li>
 
                 </ul>
             </div>
 
-
         </div>
-
-
     </div>
-
 </body>
 <script>
     // THIS MODAL IS FOR SEARCH BUTTON 

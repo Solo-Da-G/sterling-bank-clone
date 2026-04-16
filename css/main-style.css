@@ -1,0 +1,220 @@
+/* Main Styles for Sterling Bank Clone */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-red: #ff0000;
+    --white: #ffffff;
+    --whitesmoke: #f5f5f5;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    background: transparent;
+    margin-bottom: -80px; /* Kept from original to overlay on background */
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img2 {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.span-image {
+    font-size: 2rem;
+    color: var(--white);
+    font-style: italic;
+}
+
+.log2 {
+    display: flex;
+    align-items: center;
+}
+
+.button1 {
+    color: var(--white);
+    background: var(--primary-red);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    cursor: pointer;
+}
+
+.button2 {
+    padding: 10px 20px;
+    background: var(--primary-red);
+    border: none;
+    color: var(--white);
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Hero Section / Background Panels */
+.general-background {
+    display: flex;
+    min-height: 100vh;
+}
+
+.background-panel {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform var(--transition-speed);
+    text-decoration: none;
+    width: 100%; /* Overrides the fixed widths of 520px/368px */
+}
+
+.background-pic1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../assets/images/sterling-front-page1.jpg);
+    background-position: center;
+}
+
+.background-pic2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../assets/images/sterling-front-page2.jpg);
+    background-position: center;
+}
+
+.background-pic3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../assets/images/sterling-front-page3.jpg);
+    background-position: center;
+}
+
+.background-panel h1 {
+    color: var(--whitesmoke);
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    z-index: 2;
+}
+
+.background-panel:hover h1 {
+    transform: scale(1.1);
+}
+
+/* Side Navigation Hub */
+.group-all {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 101;
+    width: 50px;
+    background: var(--white);
+    border-radius: 0 15px 15px 0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.group-all ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.group-all ul li {
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background var(--transition-speed);
+}
+
+.group-all ul li:hover {
+    background: #eef2f7;
+}
+
+.group-all ul li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+.side-span {
+    display: none;
+    background: var(--white);
+    color: #333;
+    padding: 8px 15px;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+.side-fixed:hover .side-span {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    header {
+        margin-bottom: 0;
+        background: rgba(0,0,0,0.8);
+        position: relative;
+    }
+    
+    .background-panel {
+        height: 60vh;
+    }
+    
+    .background-panel h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .button2 {
+        display: none; /* Hide Internet Banking text on mobile as per original code */
+    }
+    
+    .background-panel {
+        height: 50vh;
+    }
+    
+    .background-panel h1 {
+        font-size: 2rem;
+    }
+    
+    .group-all {
+        display: none; /* Hide sidebar on mobile for cleaner look */
+    }
+}
