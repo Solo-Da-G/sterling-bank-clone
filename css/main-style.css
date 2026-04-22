@@ -27,11 +27,11 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    position: sticky;
+    position: absolute; /* Using absolute to overlay without negative margins */
+    width: 100%;
     z-index: 100;
     top: 0;
     background: transparent;
-    margin-bottom: -80px; /* Kept from original to overlay on background */
 }
 
 .log {
@@ -187,13 +187,18 @@ header {
 /* Responsive adjustments */
 @media (max-width: 992px) {
     header {
+        position: fixed;
+        background: rgba(0,0,0,0.9);
+        padding: 0.5rem 1rem;
         margin-bottom: 0;
-        background: rgba(0,0,0,0.8);
-        position: relative;
     }
     
+    .span-image {
+        font-size: 1.5rem;
+    }
+
     .background-panel {
-        height: 60vh;
+        height: 50vh; /* Better balance for stacked sections */
     }
     
     .background-panel h1 {
@@ -203,18 +208,33 @@ header {
 
 @media (max-width: 768px) {
     .button2 {
-        display: none; /* Hide Internet Banking text on mobile as per original code */
+        display: none; /* Hide Internet Banking text on mobile */
     }
     
     .background-panel {
-        height: 50vh;
+        height: 33.33vh; /* Full screen split between 3 panels */
     }
     
     .background-panel h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .group-all {
-        display: none; /* Hide sidebar on mobile for cleaner look */
+        left: unset;
+        right: 0;
+        bottom: 20px;
+        top: unset;
+        transform: none;
+        width: auto;
+        border-radius: 15px 0 0 15px;
+        background: var(--primary-red);
+    }
+    
+    .group-all ul li {
+        padding: 10px;
+    }
+    
+    .group-all ul li i, .group-all ul li img {
+        filter: brightness(0) invert(1);
     }
 }
